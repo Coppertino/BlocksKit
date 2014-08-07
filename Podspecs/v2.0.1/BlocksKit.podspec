@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'All'
   s.subspec 'All' do |ss|
-    ss.dependency 'BlocksKit/Core'
-    ss.dependency 'BlocksKit/DynamicDelegate'
-    ss.ios.dependency 'BlocksKit/MessageUI'
-    ss.ios.dependency 'BlocksKit/UIKit'
+    ss.dependency 'BlocksKit-cop/Core'
+    ss.dependency 'BlocksKit-cop/DynamicDelegate'
+    ss.ios.dependency 'BlocksKit-cop/MessageUI'
+    ss.ios.dependency 'BlocksKit-cop/UIKit'
   end
 
   s.subspec 'Core' do |ss|
@@ -28,16 +28,16 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'MessageUI' do |ss|
-    ss.dependency 'BlocksKit/Core'
-    ss.dependency 'BlocksKit/DynamicDelegate'
+    ss.dependency 'BlocksKit-cop/Core'
+    ss.dependency 'BlocksKit-cop/DynamicDelegate'
     ss.platform = :ios
     ss.source_files = 'BlocksKit/BlocksKit+MessageUI.h', 'BlocksKit/MessageUI/*.{h,m}'
     ss.ios.frameworks = 'MessageUI'
   end
 
   s.subspec 'UIKit' do |ss|
-    ss.dependency 'BlocksKit/Core'
-    ss.dependency 'BlocksKit/DynamicDelegate'
+    ss.dependency 'BlocksKit-cop/Core'
+    ss.dependency 'BlocksKit-cop/DynamicDelegate'
     ss.platform = :ios
     ss.source_files = 'BlocksKit/BlocksKit+UIKit.h', 'BlocksKit/UIKit/*.{h,m}'
   end
