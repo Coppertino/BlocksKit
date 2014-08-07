@@ -1,3 +1,5 @@
+This fork contains version 2.0.1 and podpec for it. Version 2.0.1 has last version of NSObject+BKBlockObservation but compatible witb Mac OS 10.7+
+
 [BlocksKit](https://zwaldowski.github.io/BlocksKit)
 ===================================================
 
